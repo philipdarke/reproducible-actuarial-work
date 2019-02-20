@@ -63,7 +63,7 @@ The exercises use the R statistical programming language and RStudio (a popular 
 
 R and RStudio are free open source tools available for Windows, Mac OS X and Linux.  R can be downloaded [here](https://cran.r-project.org/) and the open source edition of RStudio Desktop can be downloaded [here](https://www.rstudio.com/download).
 
-No programming experience is assumed, but if you are new to R or RStudio you can find online learning resources [here](https://www.rstudio.com/online-learning/).  In particular we recommend [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham and Garret Grolemund.
+If you are new to R or RStudio you can find online learning resources [here](https://www.rstudio.com/online-learning/).  In particular we recommend [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham and Garret Grolemund.
 
 ## RStudio basics
 
@@ -73,4 +73,4 @@ No programming experience is assumed, but if you are new to R or RStudio you can
 
 To create a script select **File / New File / R Script**.  To run the code in a script click **Source** at the top right of the script window.  Alternatively you can highlight a subsection of your code and click **Run**.
 
-<p>Output is displayed either in the console or in the <span class="orangetext">plots pane</span>.</p>
+<p>Output is displayed in the console or the <span class="orangetext">plots pane</span>.</p>
