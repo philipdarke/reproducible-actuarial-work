@@ -31,6 +31,8 @@ This presentation looks at why the concept of *reproducible work* is key and how
   <iframe class="speakerdeck-iframe" frameborder="0" src="//speakerdeck.com/player/407eb48039984407ae1a1d7e4960504a?" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px;"></iframe>
 </div>
 
+The presentation can be downloaded [here](assets/reproducible_actuarial_work.pdf).
+
 This work was originally presented at the Data Science: Opportunities for Actuaries virtual event in February 2019.
 
 # Exercises
