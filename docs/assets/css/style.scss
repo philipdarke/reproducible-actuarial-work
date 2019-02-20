@@ -1,0 +1,16 @@
+---
+---
+
+// Reverse theme colours
+$header-bg-color: #155799;
+$header-bg-color-secondary: #159957;
+$section-headings-color: #155799;
+
+// Import theme CSS
+@import "{{ site.theme }}";
+
+// Reduce size of borders in header
+.page-header {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
