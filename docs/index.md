@@ -12,13 +12,31 @@ title: Reproducible data science techniques in actuarial work
     width: 100%;
     height: 0;
     padding-bottom: 59%;
-}
+  }
   .presentation iframe {
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0; top: 0;
-}
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .bluetext {
+    color: #00a8f3;
+    font-weight: bold;
+  }
+  .greentext {
+    color: #0ed145;
+    font-weight: bold;
+  }
+  .orangetext {
+    color: #ff7f27;
+    font-weight: bold;
+  }
 </style>
 
 **How can actuaries ensure that workflows are efficient, minimise the risk of errors and allow complex work to be reproduced by others in their organisation?**
@@ -41,4 +59,8 @@ In the following exercises you will set up a simple reproducible workflow using 
 
 ## Initial setup
 
-The exercises use RStudio which is a development environment for the R statistical programming language.  The open source edition of RStudio Desktop can be downloaded for free [here](https://www.rstudio.com/).
+The exercises use the R statistical programming language and RStudio (a popular development environment for R).  
+
+R and RStudio are free open source tools available for Windows, Mac OS X and Linux.  R can be downloaded [here](https://cran.r-project.org/) and the open source edition of RStudio Desktop can be downloaded [here](https://www.rstudio.com/download).
+
+No programming experience is assumed, but if you are new to R or RStudio you can find online learning resources [here](https://www.rstudio.com/online-learning/).  In particular we recommend [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham and Garret Grolemund.
