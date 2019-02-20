@@ -37,4 +37,8 @@ This work was originally presented at the Data Science: Opportunities for Actuar
 
 # Exercises
 
-**Coming soon!**
+In the following exercises you will set up a simple reproducible workflow using some of the tools introduced.
+
+## Initial setup
+
+The exercises use RStudio which is a development environment for the R statistical programming language.  The open source edition of RStudio Desktop can be downloaded for free [here](https://www.rstudio.com/).
