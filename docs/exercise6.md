@@ -48,13 +48,13 @@ Autoloading packages
  Loading package: stringr
  Loading package: lubridate
  Loading package: forecast
- Loading package: ggplot2
 Autoloading helper functions
  Running helper script: globals.R
  Running helper script: helpers.R
 Autoloading data
 Munging data
  Running preprocessing script: 01-A.R
+Loading required package: testthat
 √ | OK F W S | Context
 / |  4       | 0
 == Results =====================================================================
@@ -62,6 +62,8 @@ OK:       4
 Failed:   0
 Warnings: 0
 Skipped:  0
+
+Keep up the good work.
 ```
 
 If any tests fail, the following code will print more information.  
