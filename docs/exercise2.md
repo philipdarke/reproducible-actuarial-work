@@ -32,7 +32,7 @@ ProjectTemplate will print out a number of messages as the project opens.  As pa
 
 ## Data processing
 
-Data pre-processing scripts are saved in the `munge` folder.  By default, ProjectTemplate will run these scripts when a project is loaded.  If you have multiple pre-processing scripts they are run in alphabetical order.
+Data pre-processing scripts are saved in the `munge` folder.  By default, ProjectTemplate will run these scripts when a project is loaded.
 
 The data represents monthly cashflows for six business lines, covering a six year period starting from January 2019.  For the purposes of this analysis, we will aggregate the cashflows for each business line and store them as a time series object.
 
@@ -61,4 +61,14 @@ Review the processed cashflows by running
 2022 112267.34 113324.90 115041.22 116655.58 118671.40 118646.21 117415.46 115567.68 115938.50 114935.11 114686.74 115052.86
 2023 116854.92 118285.90 120318.21 120647.65 124066.59 127266.34 131204.09 134259.75 135086.55 137808.61 141751.25 143700.78
 2024 146171.69 149603.43 150657.80 154338.23 157246.42 160183.02 162482.05 163495.04 164494.54 166231.03 166576.49 169832.96
+```
+
+For larger projects with substantial amounts of pre-processing, you may wish to divide your pre-processing scripts across several scripts. When you have multiple pre-processing scripts in your `munge` directory, ProjectTemplate will execute these in a predictable order, based on file name. For example, the following files would be executed in order:
+
+```R
+01-A.r
+01-B.r
+02-A.r
+02-AA.r
+02-B.r
 ```
