@@ -7,8 +7,8 @@ recursive_loading: FALSE
 munging: TRUE
 logging: FALSE
 logging_level: INFO
-load_libraries: FALSE
-libraries: reshape2, plyr, tidyverse, stringr, lubridate
+load_libraries: TRUE
+libraries: reshape2, plyr, tidyverse, stringr, lubridate, forecast
 as_factors: TRUE
 data_tables: FALSE
 attach_internal_libraries: FALSE
