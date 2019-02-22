@@ -55,7 +55,9 @@ This work was originally presented at the Data Science: Opportunities for Actuar
 
 # Exercises
 
-In the following exercises you will set up a simple reproducible workflow using some of the tools introduced.
+In the following exercises you will set up a simple reproducible workflow using some of the tools introduced in the presentation.
+
+The analysis takes some cashflow data, projects it and calculates the present value.  Automatic checks are set up and a [report](assets/report.pdf) is produced.  Note this is just a toy example to demonstrate the approach.
 
 ## Initial setup
 
@@ -63,14 +65,28 @@ The exercises use the R statistical programming language and RStudio (a popular 
 
 R and RStudio are free open source tools available for Windows, Mac OS X and Linux.  R can be downloaded [here](https://cran.r-project.org/) and the open source edition of RStudio Desktop can be downloaded [here](https://www.rstudio.com/download).
 
-If you are new to R or RStudio you can find online learning resources [here](https://www.rstudio.com/online-learning/).  In particular we recommend [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham and Garret Grolemund.
-
 ## RStudio basics
 
 <a href="assets/images/RStudio.png">![RStudio](assets/images/RStudio.png)</a>
 
 <p>Execute code by running a <span class="bluetext">script</span> or by entering it in the <span class="greentext">console</span>.</p>
 
-To create a script select **File / New File / R Script**.  To run the code in a script click **Source** at the top right of the script window.  Alternatively you can highlight a subsection of your code and click **Run**.
+To create a script select `File / New File / R Script`.  To run the code in a script click `Source` at the top right of the script window.  Alternatively you can highlight a subsection of your code and click `Run`.
 
-<p>Output is displayed in the console or the <span class="orangetext">plots pane</span>.</p>
+<p>Output is displayed in the <span class="greentext">console</span> or the <span class="orangetext">plots pane</span>.  Use the tabs at the top of the plots pane to access Files, Packages and Help.</p>
+
+## Using Git for version control
+
+A version control system is a key part of a reproducible workflow.
+
+Version control is like having an unlimited "undo" button.  It avoids managing multiple versions of the same file and allows many people to work in parallel on a project.  Most software developers and data scientists use version control for their work.
+
+If you want to use version control alongside these exercises, this [guide](http://homepages.cs.ncl.ac.uk/matthew.forshaw/teaching/csc8627/versioncontrol/) explains how to set up and use Git with [GitHub](https://github.com/).
+
+## Getting help
+
+If you are new to R or RStudio you can find online learning resources [here](https://www.rstudio.com/online-learning/).  In particular we recommend [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham and Garret Grolemund.
+
+# Exercises
+
+-
