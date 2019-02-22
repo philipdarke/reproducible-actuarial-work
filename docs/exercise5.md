@@ -14,30 +14,36 @@ The benefits of R Markdown are:
 
 ## Set up R Markdown
 
-The set up R Markdown run the following code in the console
+To set up R Markdown run the following code in the console
 
 ```R
-install.packages("rmarkdown")
+> install.packages("rmarkdown")
 ```
 
-If you want to create PDF documents you will need to also install LaTex.  Popular options are [MiKTex](https://miktex.org/) for Windows, [MacTeX](http://www.tug.org/mactex/) for Mac OS X and [TeX Live](https://www.tug.org/texlive/) for Linux.  Alternatively, [TinyTex](https://yihui.name/tinytex/) is a cut down solution that you can install directly from R using
+If you want to create PDF documents you will need to also install LaTeX.
+
+Popular options are [MiKTex](https://miktex.org/) for Windows, [MacTeX](http://www.tug.org/mactex/) for Mac OS X and [TeX Live](https://www.tug.org/texlive/) for Linux.  Alternatively, [TinyTeX](https://yihui.name/tinytex/) is a cut down solution that you can install directly from R using
 
 ```R
-install.packages("tinytex")
-tinytex::install_tinytex()
+> install.packages("tinytex")
+> tinytex::install_tinytex()
 ```
+
+TinyTeX is likely to be the simplest option if you only want to install LaTeX to experiment with these exercises.
 
 ## Using R Markdown
 
-Reports are saved in the `reports` directory.  To create a R Markdown report go to `File / New File / R Markdown...`, enter the report title, author name and choose PDF.
+To create a R Markdown report go to `File / New File / R Markdown...`, enter the report title, author name and choose PDF.
 
-To insert a chunk of R code choose `Insert / R` at the top right of the script pane.  The cog-wheel button on the right of the chunk lets you choose whether the code and output is included in the report.
+Reports are saved in the `reports` directory.
 
-The header contains the basic set up for the document.
+### Front matter
+
+The front matter at the top of a R Markdown file contains the basic set up for the document.
 
 ```
 ---
-title: "Document title""
+title: "Document title"
 author: "Name"
 date: "Date"
 output: pdf_document
@@ -46,6 +52,10 @@ output: pdf_document
 
 Various output types are supported, including Microsoft Word, HTML websites and presentations.
 
+### Code chunks
+
+To insert a chunk of R code choose `Insert / R` at the top right of the script pane.  The cog-wheel button on the right of the chunk lets you choose whether the code and output is included in the report.
+
 The first chunk should include the following to set up the document
 
 ```R
@@ -53,9 +63,13 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir= normalizePath('..'))
 ```
 
-You can import the results of analysis by adding a chunk linking to the script you wish to import, for example `source("src/analysis.R")`, and then refer to the variables and plots in the document.
+You can import the results of analysis by adding a chunk linking to the script you wish to import, for example `source("src/analysis.R")`, and then refer to the variables and plots in the document.  This is the key to linking your analysis directly to the report.  The example report below shows how this works.
 
-When you are ready to create the report, choose `Knit` at the top of the script pane and a PDF will be created.
+### Creating the document
+
+To create a document, select `Knit` at the top of the script pane.
+
+### Further resources
 
 We recommend [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) by Yihui Xie, J. J. Allaire and Garrett Grolemund if you want to learn more.
 
@@ -63,6 +77,6 @@ We recommend [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmark
 
 Download [report.Rmd](assets/report.Rmd) and save it in the `reports` directory.  Click `Knit` to create a PDF which should look like [this](assets/report.pdf).
 
-Review report.Rmd to see how results from the analysis have been included.  You can experiment by making changes or trying different document types (try `html_document` for example).
+Review `report.Rmd` to see how results from the analysis have been included.  You can experiment by making changes or trying different document types (try `html_document` for example).
 
 You can also create templates to customise how the document looks, for example to match your organisation's report style.
