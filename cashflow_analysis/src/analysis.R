@@ -2,10 +2,10 @@
 library("ProjectTemplate")
 load.project()
 
-# Model cashflows as a ARIMA(2,1,0) time series
+# Model cashflows as an ARIMA(2,1,0) time series
 cashflow_model = arima(cashflows, order=c(2,1,0))
 
-# Create an 12 month forecast
+# Create a 12 month forecast
 forecast = forecast(cashflow_model, 12, level=c(80, 90, 95, 99))
 
 # Plot the forecast
