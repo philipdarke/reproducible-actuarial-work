@@ -30,4 +30,6 @@ This creates a new directory called `cashflow_analysis` in your RStudio working 
 
 <a href="assets/images/projecttemplate.png">![ProjectTemplate](assets/images/projecttemplate.png)</a>
 
-The exercises will illustrate how you can use these folders to structure your analysis.  You can read more about the project structure [here](http://projecttemplate.net/architecture.html).
+The following exercises will illustrate how you can use these folders to structure your analysis.
+
+If you are interested in the detail, you can read more about the project structure [here](http://projecttemplate.net/architecture.html).
