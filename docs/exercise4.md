@@ -22,7 +22,10 @@ cashflow_model = arima(cashflows, order=c(2,1,0))
 forecast = forecast(cashflow_model, 12, level=c(80, 90, 95, 99))
 
 # Plot the forecast
-cf_plot = autoplot(forecast)
+cf_plot = autoplot(forecast) +
+  xlab("Year") +
+  ylab("Cashflow") +
+  ggtitle("12 month cashflow projection")
 
 # Hold cashflow forecasts in a data frame
 forecasts = data.frame(lower=c(cashflows, forecast$lower[,3]),
@@ -57,7 +60,7 @@ Running `> cf_plot` will display a graph of the cashflows in the plots plane.
 
 `ggplot2` is a system for creating graphics in R.  The cheat sheet [here](https://github.com/rstudio/cheatsheets/blob/master/data-visualization-2.1.pdf) and the [data visualisation](https://r4ds.had.co.nz/data-visualisation.html) chapter of R for Data Science covers how to use `ggplot2` in detail.
 
-You may wish to use these resources to improve the plot by adding axis labels and a better title.
+You can use these resources to improve the plot, for example by formatting the axis and legend.
 
 <div class="nav">
   <div class="back"><a href="./exercise3"><< Exercise 3</a></div>

@@ -9,7 +9,10 @@ cashflow_model = arima(cashflows, order=c(2,1,0))
 forecast = forecast(cashflow_model, 12, level=c(80, 90, 95, 99))
 
 # Plot the forecast
-cf_plot = autoplot(forecast)
+cf_plot = autoplot(forecast) +
+  xlab("Year") +
+  ylab("Cashflow") +
+  ggtitle("12 month cashflow projection")
 
 # Hold cashflow forecasts in a data frame
 forecasts = data.frame(lower=c(cashflows, forecast$lower[,3]),
