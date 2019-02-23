@@ -85,5 +85,5 @@ Note how the figures, plot and tables have all updated to reflect the new analys
 <div class="nav">
   <div class="back"><a href="./exercise6"><< Exercise 6</a></div>
   <div class="contents"><a href="./index.html#contents">Contents</a></div>
-  <div class="forward"><a href="./conclusion">Final thoughts >></a></div>
+  <div class="forward"><a href="./nextsteps">Next steps >></a></div>
 </div>

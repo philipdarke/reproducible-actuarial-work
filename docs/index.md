@@ -61,7 +61,7 @@ If you are new to R or RStudio you can find online learning resources [here](htt
   <li><a href="exercise5">Exercise 5</a>: Create a report using R Markdown</li>
   <li><a href="exercise6">Exercise 6</a>: Test your results using testthat</li>
   <li><a href="exercise7">Exercise 7</a>: Updating the analysis and report</li>
-  <li><a href="conclusion">Final thoughts</a></li>
+  <li><a href="nextsteps">Next steps</a></li>
 </ul>
 
 <div class="nav">
