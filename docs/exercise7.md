@@ -15,7 +15,7 @@ description: Updating the analysis and report
 
 The final exercise demonstrates the advantages of working reproducibly.
 
-> You have discussed the report with a colleague/manager/client.
+> You have discussed the report with your colleagues/manager/client.
 >
 > Disaster!  It has emerged that the cashflows for business lines 5 and 6 should not have been included in the analysis and the discount rate should have been 2.75% p.a.
 
@@ -32,12 +32,13 @@ Manual steps such as these are time consuming and can introduce errors.  What if
 
 In order to make the required changes:
 
-* Replace line 2 of the `munge/01-A.R` script with `cashflows_to_use = rawcashflows[2:5]` to remove the cashflows for lines 5 and 6.  Note how we never edit the raw data!
+* Replace line 2 of the `munge/01-A.R` script with `cashflows_to_use = rawcashflows[2:5]` to remove the cashflows for lines 5 and 6.  Note that we never edit the raw data!
+
 * Change line 20 in the `src/analysis.R` script to `disc = 0.0275` to change the discount rate.
 
 ## Check your changes
 
-Before creating the report, run your tests on the changes in the console
+Before creating the report, run your tests in the console
 
 ```R
 > test.project()
@@ -68,7 +69,7 @@ Warnings: 0
 Skipped:  0
 ```
 
-There are 5 failed tests.  To review the tests run the following
+There are 5 failed tests.  To review the test results run the following
 
 ```R
 > (test_dir("tests", reporter = "list"))
@@ -80,9 +81,9 @@ There are 5 failed tests.  To review the tests run the following
 
 You can see that the "Correct business lines are included" test has failed.  
 
-Recall that this test checks that there are 6 sets of cashflows in the analysis.  This should now be 4.
+Recall that this test checks that there are six sets of cashflows in the analysis.  Now that two business lines have been removed, the test should check that there are four sets of cashflows.
 
-To correct this, go to `test.R` and change line 10 to `expect_equal(ncol(cashflows_to_use), 4)`.  All tests will now pass.
+To correct this, go to `test.R` and change line 10 to `expect_equal(ncol(cashflows_to_use), 4)`.  All tests should now pass and you can finalise the report.
 
 ## Finalise the report
 
