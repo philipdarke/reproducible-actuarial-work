@@ -5,6 +5,7 @@ date: "`r params$date`"
 output: 
   pdf_document:
     latex_engine: xelatex
+geometry: "a4paper, margin=2.5cm"
 mainfont: Calibri
 fontsize: 12pt
 params:
