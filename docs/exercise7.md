@@ -4,15 +4,6 @@ title: Exercise 7
 description: Updating the analysis and report
 ---
 
-<style type="text/css" media="screen">
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-</style>
-
 The final exercise demonstrates the advantages of working reproducibly.
 
 > You have discussed the report with your colleagues/manager/client.
@@ -90,3 +81,9 @@ To correct this, go to `test.R` and change line 10 to `expect_equal(ncol(cashflo
 Open `reports/report.Rmd` (in practice you would likely need to also update the wording) and click `Knit`.  A new [report](assets/report2.pdf) will be created with the updated results.
 
 Note how the figures, plot and tables have all updated to reflect the new analysis.
+
+<div class="nav">
+  <div class="back"><a href="./exercise6"><< Exercise 6</a></div>
+  <div class="contents"><a href="./index.html#contents">Contents</a></div>
+  <div class="forward"><a href="./conclusion">Final thoughts >></a></div>
+</div>

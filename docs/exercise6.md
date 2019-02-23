@@ -73,3 +73,9 @@ This code runs all the tests in the `tests` directory and prints detailed output
 ```R
 > (test_dir("tests", reporter = "list"))
 ```
+
+<div class="nav">
+  <div class="back"><a href="./exercise5"><< Exercise 5</a></div>
+  <div class="contents"><a href="./index.html#contents">Contents</a></div>
+  <div class="forward"><a href="./exercise7">Exercise 7 >></a></div>
+</div>

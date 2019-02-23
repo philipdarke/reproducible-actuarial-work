@@ -57,3 +57,9 @@ discount = function(cashflows, disc, freq) {
   pv = as.numeric(cashflows %*% D)
 }
 ```
+
+<div class="nav">
+  <div class="back"><a href="./exercise2"><< Exercise 2</a></div>
+  <div class="contents"><a href="./index.html#contents">Contents</a></div>
+  <div class="forward"><a href="./exercise4">Exercise 4 >></a></div>
+</div>

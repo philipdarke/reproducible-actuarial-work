@@ -58,3 +58,9 @@ Running `> cf_plot` will display a graph of the cashflows in the plots plane.
 `ggplot2` is a system for creating graphics in R.  The cheat sheet [here](https://github.com/rstudio/cheatsheets/blob/master/data-visualization-2.1.pdf) and the [data visualisation](https://r4ds.had.co.nz/data-visualisation.html) chapter of R for Data Science covers how to use `ggplot2` in detail.
 
 You may wish to use these resources to improve the plot by adding axis labels and a better title.
+
+<div class="nav">
+  <div class="back"><a href="./exercise3"><< Exercise 3</a></div>
+  <div class="contents"><a href="./index.html#contents">Contents</a></div>
+  <div class="forward"><a href="./exercise5">Exercise 5 >></a></div>
+</div>

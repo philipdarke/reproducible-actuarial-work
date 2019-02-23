@@ -14,3 +14,59 @@ $section-headings-color: #155799;
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
+
+// Navigation bar
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2.5em;
+  font-weight: bold;
+}
+.nav .back {
+  place-self: end start;
+}
+.nav .contents {
+  place-self: end center;
+}
+.nav .forward {
+  place-self: end end;
+}
+
+// Image size and placement
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+// Embedded presentation
+iframe {
+  max-width: 100%;
+}
+.presentation {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 59%;
+}
+.presentation iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; top: 0;
+}
+
+// Text highlighting
+.bluetext {
+  color: #00a8f3;
+  font-weight: bold;
+}
+.greentext {
+  color: #0ed145;
+  font-weight: bold;
+}
+.orangetext {
+  color: #ff7f27;
+  font-weight: bold;
+}

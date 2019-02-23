@@ -80,3 +80,9 @@ Download [report.Rmd](assets/report.Rmd) and save it in the `reports` directory.
 Review `report.Rmd` to see how results from the analysis have been included.  You can experiment by making changes or trying different document types (try `html_document` for example).
 
 You can also create templates to customise how the document looks, for example to match your organisation's report style.
+
+<div class="nav">
+  <div class="back"><a href="./exercise4"><< Exercise 4</a></div>
+  <div class="contents"><a href="./index.html#contents">Contents</a></div>
+  <div class="forward"><a href="./exercise6">Exercise 6 >></a></div>
+</div>

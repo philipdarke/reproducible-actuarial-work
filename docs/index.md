@@ -3,42 +3,6 @@ layout: default
 title: Reproducible data science techniques in actuarial work
 ---
 
-<style type="text/css" media="screen">
-  iframe {
-    max-width: 100%;
-  }
-  .presentation {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 59%;
-  }
-  .presentation iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0; top: 0;
-  }
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-  .bluetext {
-    color: #00a8f3;
-    font-weight: bold;
-  }
-  .greentext {
-    color: #0ed145;
-    font-weight: bold;
-  }
-  .orangetext {
-    color: #ff7f27;
-    font-weight: bold;
-  }
-</style>
-
 **How can actuaries ensure that workflows are efficient, minimise the risk of errors and allow complex work to be reproduced by others in their organisation?**
 
 Actuaries exploring the use of data science have the opportunity to revisit existing ways of working and consider whether they remain appropriate.  These challenges are also being faced in science and by other professions.
@@ -87,6 +51,21 @@ If you want to use version control alongside these exercises, this [guide](http:
 
 If you are new to R or RStudio you can find online learning resources [here](https://www.rstudio.com/online-learning/).  In particular we recommend [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham and Garret Grolemund.
 
-# Exercises
+<h2 id="contents">Exercises</h2>
 
--
+<ul>
+  <li><a href="exercise1">Exercise 1</a>: Use ProjectTemplate to structure an data analysis project in R</li>
+  <li><a href="exercise2">Exercise 2</a>: Import and pre-process your data</li>
+  <li><a href="exercise3">Exercise 3</a>: Helper functions and R libraries</li>
+  <li><a href="exercise4">Exercise 4</a>: Forecast the cashflows and calculate the present value</li>
+  <li><a href="exercise5">Exercise 5</a>: Create a report using R Markdown</li>
+  <li><a href="exercise6">Exercise 6</a>: Test your results using testthat</li>
+  <li><a href="exercise7">Exercise 7</a>: Updating the analysis and report</li>
+  <li><a href="conclusion">Final thoughts</a></li>
+</ul>
+
+<div class="nav">
+  <div class="back"></div>
+  <div class="contents"></div>
+  <div class="forward"><a href="./exercise1">Exercise 1 >></a></div>
+</div>
