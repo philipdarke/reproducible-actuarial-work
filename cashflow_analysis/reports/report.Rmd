@@ -1,9 +1,14 @@
 ---
-title: "Cashflow analysis"
+title: "`r params$title`"
 author: "`r params$org`"
 date: "`r params$date`"
-output: pdf_document
+output: 
+  pdf_document:
+    latex_engine: xelatex
+mainfont: Calibri
+fontsize: 12pt
 params:
+  title: "Cashflow analysis"
   org: "Organisation name"
   author: "Your name FIA"
   date: "February 2019"
@@ -32,9 +37,9 @@ Using a discount rate of `r paste(100*disc, "% p.a.", sep="")` the present value
 
 ## Cashflow analysis
 
-Lorem ipsum dolor sit amet, ad mea sumo vocibus graecis, at mea soleat doctus, usu elit dicta ne. Aliquid salutatus vix et, dicunt aperiri definiebas quo no. Vel ea assueverit disputando. Dicat alterum posidonium te qui.
+Lorem ipsum dolor sit amet, ad mea sumo vocibus graecis, at mea soleat doctus, usu elit dicta ne. Aliquid salutatus vix et, aperiri definiebas quo no. Vel ea assueverit disputando. Dicat alterum posidonium te qui.
 
-Vim vocibus assueverit in, iusto ridens oporteat ea vim, noster minimum reformidans ea cum. Scribentur mediocritatem ad cum, cu sed dicant audiam explicari, vim at viris libris mnesarchum. Id quod consul est. Eu mei accumsan officiis, habemus accusata periculis an eam. Sapientem definitiones ut mel, pri te dissentias temporibus.
+Vim vocibus assueverit in, iusto ridens oporteat ea vim, noster minimum reformidans. Scribentur mediocritatem, cu sed dicant audiam explicari, vim at viris libris mnesarchum. Id quod consul est. Eu mei accumsan officiis, habemus accusata periculis an eam. Sapientem definitiones ut mel, pri te dissentias temporibus.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 # Insert cashflow plot
@@ -51,8 +56,8 @@ Mea odio eripuit vocibus ei, dicun volutpat vis an. Ei mei errem detraxit guberg
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 # Summarise assumptions used
-table1 = data.frame(c("Discount rate", "Example assumptions...", "Example assumptions..."),
-                    c(paste(100*disc, "% p.a.", sep=""), "5% p.a.", "2% p.a."))
+table1 = data.frame(c("Discount rate", "...", "..."),
+                    c(paste(100*disc, "% p.a.", sep=""), "...", "..."))
 knitr::kable(table1, col.names=c("Assumption", "Value"))
 ```
 
@@ -67,10 +72,8 @@ knitr::kable(table2, col.names=c("Business line", "Sum of cashflows"))
 
 I look forward to discussing this report with you.
 
-**`r params$author`**
-
-**`r params$org`**
-
+**`r params$author`**  
+**`r params$org`**  
 **`r params$date`**
 
 ## Notes
