@@ -54,7 +54,7 @@ Various output types are supported, including Microsoft Word, HTML websites and 
 
 ### Code chunks
 
-To insert a chunk of R code choose `Insert / R` at the top right of the script pane.  The cog-wheel button on the right of the chunk lets you choose whether the code and output is included in the report.
+To insert a chunk of R code choose `Insert / R` at the top right of the script pane.  The cog-wheel button on the right of the chunk lets you choose whether the code and/or output is included in the report.
 
 The first chunk should include the following to set up the document
 
@@ -63,7 +63,9 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir= normalizePath('..'))
 ```
 
-You can import the results of analysis by adding a chunk linking to the script you wish to import, for example `source("src/analysis.R")`, and then refer to the variables and plots in the document.  This is the key to linking your analysis directly to the report.  The example report below shows how this works.
+You can import the results of analysis to a R Markdown document by adding a chunk to run the script you wish to import (for this example `source("src/analysis.R")`).  You then refer directly to the variables and plots in the analysis script when writing the document.
+
+This is the key to linking your analysis directly to the report.  The example report below shows how this works.
 
 ### Creating the document
 
@@ -77,9 +79,9 @@ We recommend [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmark
 
 Download [report.Rmd](assets/report.Rmd) and save it in the `reports` directory.  Click `Knit` to create a PDF which should look like [this](assets/report.pdf).
 
-Review `report.Rmd` to see how results from the analysis have been included.  You can experiment by making changes or trying different document types (try `html_document` for example).
+Review `report.Rmd` to see how results from the analysis have been included in the document.  You can experiment by making changes or trying different document types (try replacing `pdf_document` with `html_document` in the front matter).
 
-You can also create templates to customise how the document looks, for example to match your organisation's report style.
+You can also create templates to customise how the document looks, for example to match your organisation's report style.  See [advanced customisation](https://bookdown.org/yihui/rmarkdown/pdf-document.html#advanced-customization-1) for some pointers.
 
 <div class="nav">
   <div class="back"><a href="./exercise4"><< Exercise 4</a></div>

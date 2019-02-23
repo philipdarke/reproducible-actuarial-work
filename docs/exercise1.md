@@ -27,7 +27,7 @@ This creates a new directory called `cashflow_analysis` in your RStudio working 
 
 <a href="assets/images/projecttemplate.png">![ProjectTemplate](assets/images/projecttemplate.png)</a>
 
-The following exercises will illustrate how you can use these folders to structure your analysis.  You can read more about the project structure [here](http://projecttemplate.net/architecture.html).
+The following exercises will illustrate how you can use these directories to structure your analysis.  You can read more about the project structure [here](http://projecttemplate.net/architecture.html).
 
 <div class="nav">
   <div class="back"><a href="./index.html#contents"><< Contents</a></div>
