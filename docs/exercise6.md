@@ -4,7 +4,9 @@ title: Exercise 6
 description: Test your results using testthat
 ---
 
-`testthat` can be used to add automated tests and checks to your work.  The book [R Packages](http://r-pkgs.had.co.nz/tests.html) has a chapter explaining the testing process and how to use `testthat`.
+`testthat` can be used to add automated tests and checks to your work (in software development these are known as "unit tests").  The book [R Packages](http://r-pkgs.had.co.nz/tests.html) has a chapter explaining the testing process and how to use `testthat`.
+
+You can think of tests as a set of rules that your code must follow.  Testing tools such as `testthat` run your code and notify you the results break these rules.
 
 We will set up some simple tests to test the pre-processing in Exercise 2 and the `discount()` helper function created in Exercise 3.
 
@@ -26,11 +28,11 @@ test_that("discount() works correctly", {
 })
 ```
 
-The format for the tests above is `expect_equal(A, B)` i.e. the code A is expected to be equal to B when run.
+The format for the tests above is `expect_equal(A, B)` i.e. the code A is expected to be equal to the value B when the test is run.
 
-The first block of code checks that cashflows from all six business lines are included in the analysis (it checks the number of columns in the `cashflows_to_use` matrix equals 6).
+The first block of code checks that cashflows from all six business lines are included in the analysis (it checks the number of columns in the `cashflows_to_use` tibble/data frame equals 6).
 
-The second tests that the output from the `discount()` helper function is expected for some simple test inputs.
+The second tests that the output from the `discount()` helper function is as expected for some simple test inputs.
 
 ## Running the tests
 
@@ -68,11 +70,19 @@ Keep up the good work.
 
 If any tests fail, the following code will print more information.  
 
-This code runs all the tests in the `tests` directory and prints detailed output.  See the next exercise for an example.
-
 ```R
 > (test_dir("tests", reporter = "list"))
 ```
+
+This code runs all the tests in the `tests` directory and prints detailed output.  See [Exercise 7](./exercise7) for an example.
+
+## Continuous integration
+
+The process of running tests can be automated using continuous integration tools such as [Travis CI](https://travis-ci.org/).  These services build your project and run all tests when you "commit" your changes using a version control tool such as GitHub.
+
+You can also use code coverage tools such as [Codecov](https://codecov.io/) to monitor how much of your code is subject to automatic testing.  These tools can highlight when parts of your code are not being checked, prompting you to write more unit tests.
+
+
 
 <div class="nav">
   <div class="back"><a href="./exercise5"><< Exercise 5</a></div>
