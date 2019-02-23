@@ -57,11 +57,11 @@ This work was originally presented at the Data Science: Opportunities for Actuar
 
 In the following exercises you will set up a simple reproducible workflow using some of the tools introduced in the presentation.
 
-The analysis takes some cashflow data, projects it and calculates the present value.  Automatic checks are set up and a [report](assets/report.pdf) is produced.  Note this is just a toy example to demonstrate the approach.
+As a toy example to demonstrate the approach, the analysis takes some cashflow data, projects it and calculates the present value.  Automatic checks are set up and a [report](assets/report.pdf) is produced.
 
 ## Initial setup
 
-The exercises use the R statistical programming language and RStudio (a popular development environment for R).  
+The exercises use the R statistical programming language and RStudio (a popular development environment for R).
 
 R and RStudio are free open source tools available for Windows, Mac OS X and Linux.  R can be downloaded [here](https://cran.r-project.org/) and the open source edition of RStudio Desktop can be downloaded [here](https://www.rstudio.com/download).
 
