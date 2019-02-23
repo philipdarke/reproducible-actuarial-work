@@ -39,10 +39,10 @@ The data represents monthly cashflows for six business lines, covering a six yea
 Replace the contents of `01-A.R` in the `munge` folder with the following code and run it by clicking `Source` at the top right of the script window.
 
 ```R
-# Remove first column of rawcashflows.csv
+# Extract cashflows for analysis
 cashflows_to_use = rawcashflows[-1]
 
-# Sum the rows of the rawcashflow table and store them in the variable cashflows
+# Sum the rows of the cashflows_to_use table and store them in cashflows
 cashflows = apply(cashflows_to_use, 1, sum)
 
 # Convert cashflows to a time series object (monthly frequency starting 01/2019)
@@ -63,7 +63,9 @@ Review the processed cashflows by running
 2024 146171.69 149603.43 150657.80 154338.23 157246.42 160183.02 162482.05 163495.04 164494.54 166231.03 166576.49 169832.96
 ```
 
-For larger projects with substantial amounts of pre-processing, you may wish to divide your pre-processing scripts across several scripts. When you have multiple pre-processing scripts in your `munge` directory, ProjectTemplate will execute these in a predictable order, based on file name. For example, the following files would be executed in order:
+For larger projects with substantial amounts of pre-processing, you may wish to divide your pre-processing across several scripts.
+
+When you have multiple pre-processing scripts in your `munge` directory, ProjectTemplate will execute these in a predictable order, based on file name. For example the following files would be executed in this order:
 
 ```R
 01-A.r
@@ -72,3 +74,9 @@ For larger projects with substantial amounts of pre-processing, you may wish to 
 02-AA.r
 02-B.r
 ```
+
+<div class="nav">
+  <div class="back"><a href="./exercise1"><< Exercise 1</a></div>
+  <div class="contents"><a href="./index.html#contents">Contents</a></div>
+  <div class="forward"><a href="./exercise3">Exercise 3 >></a></div>
+</div>
