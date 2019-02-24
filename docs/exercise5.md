@@ -50,11 +50,11 @@ output: pdf_document
 ---
 ```
 
-Various output types are supported, including Microsoft Word, HTML websites and presentations.
+Various [output types](https://rmarkdown.rstudio.com/gallery.html) are supported, including Microsoft Word, HTML websites and presentations.
 
 ### Code chunks
 
-To insert a chunk of R code choose `Insert / R` at the top right of the script pane.  The cog-wheel button on the right of the chunk lets you choose whether the code and/or output is included in the report.
+To insert a chunk of R code into a document choose `Insert / R` at the top right of the script pane.  The cog-wheel button on the right of the chunk lets you choose whether the code and/or output is included in the report.
 
 The first chunk should include the following to set up the document
 
@@ -63,13 +63,19 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir= normalizePath('..'))
 ```
 
-You can import the results of analysis to a R Markdown document by adding a chunk to run the script you wish to import (for this example `source("src/analysis.R")`).  You then refer directly to the variables and plots in the analysis script when writing the document.
+You can import the results of analysis to a R Markdown document by adding a chunk to run the script you wish to import (for this example you would use `source("src/analysis.R")`).  You then refer directly to the variables and plots in the analysis script when writing the document.  **This is the key to linking your analysis directly to the report.**
 
-This is the key to linking your analysis directly to the report.  The example report below shows how this works.
+### Refering to variables in your document text
+
+To insert a variable into your text, use `r variable_name`.  You must surround the code with tick marks (&#96;).
+
+To format a variable use the [format function](https://www.rdocumentation.org/packages/base/versions/3.5.2/topics/format), for example `r format(round(variable_name,-3), big.mark=",")` rounds a variable to the nearest thousand and inserts a breaking comma e.g. 123,000.
+
+The example report below shows how this works.
 
 ### Creating the document
 
-To create a document, select `Knit` at the top of the script pane.
+To create a document, select `Knit` at the top of the script pane.  This runs you code, inserts the results into the document and saves the output.
 
 ### Further resources
 
@@ -77,7 +83,9 @@ We recommend [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmark
 
 ## Creating the report
 
-Download [report.Rmd](assets/report.Rmd) and save it in the `reports` directory.  Click `Knit` to create a PDF which should look like [this](assets/report.pdf).
+Download [report.Rmd](assets/report.Rmd) and save it in the `reports` directory.
+
+Enter the document title, your name, your organisation and the date under `params` in the front matter and click `Knit` to create a PDF which should look like [this](assets/report.pdf).
 
 Review `report.Rmd` to see how results from the analysis have been included in the document.  You can experiment by making changes or trying different document types (try replacing `pdf_document` with `html_document` in the front matter).
 
