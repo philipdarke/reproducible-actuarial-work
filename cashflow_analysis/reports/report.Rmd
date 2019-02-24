@@ -32,9 +32,9 @@ source("src/analysis.R")
 
 ## Summary
 
-Using a discount rate of `r paste(100*disc, "% p.a.", sep="")` the present value of the projected cashflows is `r format(round(pv_central,-3), big.mark=",")`.
+Using a discount rate of `r format(100*disc)`% p.a. the present value of the projected cashflows is &pound;`r format(round(pv_central,-3), big.mark=",")`.
 
-95% of model outcomes have a present value in the range `r format(round(pv_lower,-3), big.mark=",")` to `r format(round(pv_upper,-3), big.mark=",")`.
+95% of model outcomes have a present value in the range &pound;`r format(round(pv_lower,-3), big.mark=",")` to &pound;`r format(round(pv_upper,-3), big.mark=",")`.
 
 ## Cashflow analysis
 
