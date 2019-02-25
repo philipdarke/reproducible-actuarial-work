@@ -1,0 +1,84 @@
+---
+title: "`r params$title`"
+author: "`r params$org`"
+date: "`r params$date`"
+output: 
+  pdf_document:
+    latex_engine: xelatex
+geometry: "a4paper, margin=2.5cm"
+mainfont: Calibri
+fontsize: 12pt
+params:
+  title: "Cashflow analysis"
+  org: "Organisation name"
+  author: "Your name FIA"
+  date: "February 2019"
+---
+
+```{r setup, include=FALSE}
+# Knitr setup
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir= normalizePath('..'))
+```
+
+```{r include=FALSE}
+# Load project
+library("ProjectTemplate")
+load.project()
+
+# Run code in analysis.R script
+source("src/analysis.R")
+```
+
+## Summary
+
+Using a discount rate of `r format(100*disc)`% p.a. the present value of the projected cashflows is &pound;`r format(round(pv_central,-3), big.mark=",")`.
+
+95% of model outcomes have a present value in the range &pound;`r format(round(pv_lower,-3), big.mark=",")` to &pound;`r format(round(pv_upper,-3), big.mark=",")`.
+
+## Cashflow analysis
+
+Lorem ipsum dolor sit amet, ad mea sumo vocibus graecis, at mea soleat doctus, usu elit dicta ne. Aliquid salutatus vix et, aperiri definiebas quo no. Vel ea assueverit disputando. Dicat alterum posidonium te qui.
+
+Vim vocibus assueverit in, iusto ridens oporteat ea vim, noster minimum reformidans. Scribentur mediocritatem, cu sed dicant audiam explicari, vim at viris libris mnesarchum. Id quod consul est. Eu mei accumsan officiis, habemus accusata periculis an eam. Sapientem definitiones ut mel, pri te dissentias temporibus.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Insert cashflow plot
+cf_plot
+```
+
+\newpage
+
+## Data and assumptions
+
+Mea odio eripuit vocibus ei, dicun volutpat vis an. Ei mei errem detraxit gubergren, disputando accommodare voluptatibus ei per. Ius id facilis eleifend delicatissimi. Eos te solum singulis, his vitae nusquam no.
+
+### Assumptions
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Summarise assumptions used
+table1 = data.frame(c("Discount rate", "...", "..."),
+                    c(paste(100*disc, "% p.a.", sep=""), "...", "..."))
+knitr::kable(table1, col.names=c("Assumption", "Value"))
+```
+
+### Data summary
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Summarise cashflows used in the analysis
+table2 = data.frame(colnames(cashflows_to_use),
+                    format(round(as.vector(apply(cashflows_to_use, 2, sum)),-3), big.mark=","))
+knitr::kable(table2, col.names=c("Business line", "Sum of cashflows"))
+```
+
+I look forward to discussing this report with you.
+
+**`r params$author`**  
+**`r params$org`**  
+**`r params$date`**
+
+## Notes
+
+Eum et tamquam patrioque, has an meliore imperdiet, audiam docendi delicata his ad. Ad solet perfecto vituperata his, ignota appetere mea ad. Id mea mazim consequat, in mei dignissim cotidieque, sed eloquentiam definitiones no. Persius democritum ne mea, duo an mutat blandit deterruisset. Assum deterruisset an vix.
+
+Ius omnium argumentum ea, has an nibh eius, ei mel dicta choro singulis. Mel no iriure sententiae, dolorem menandri patrioque in eum, saepe singulis atomorum vim id. Vim te epicurei reformidans, eum at posidonium complectitur. Lucilius legendos sit ei. Duo ut denique epicurei vituperatoribus.
