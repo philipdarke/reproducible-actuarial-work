@@ -6,9 +6,9 @@ description: Test your results using testthat
 
 `testthat` can be used to add automated tests and checks to your work (in software development these are known as "unit tests").  The book [R Packages](http://r-pkgs.had.co.nz/tests.html) has a chapter explaining the testing process and how to use `testthat`.
 
-You can think of tests as a set of rules that your code must follow.  Testing tools such as `testthat` run your code and notify you the results break these rules.
+You can think of tests as a set of rules that your code must follow.  Testing tools such as `testthat` run your code and notify you if the results break these rules.
 
-We will set up some simple tests to test the pre-processing in Exercise 2 and the `discount()` helper function created in Exercise 3.
+We will set up some simple tests to check the pre-processing carried out in Exercise 2 and the `discount()` helper function created in Exercise 3.
 
 ## Setting up a test
 
