@@ -55,12 +55,11 @@ Mea odio eripuit vocibus ei, dicun volutpat vis an. Ei mei errem detraxit guberg
 
 ### Assumptions
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-# Summarise assumptions used
-table1 = data.frame(c("Discount rate", "...", "..."),
-                    c(paste(100*disc, "% p.a.", sep=""), "...", "..."))
-knitr::kable(table1, col.names=c("Assumption", "Value"))
-```
+Assumption    | Value
+------------- | -------------------------------------
+Discount rate | `r paste(100*disc, "% p.a.", sep="")`
+...           | ...
+...           | ...
 
 ### Data summary
 
