@@ -15,7 +15,9 @@ If your workflow looked like this you would have to amend the analysis in Excel 
 <a href="https://ukgovdatascience.github.io/rap_companion/why.html#the-current-statistics-production-process">![Workflow](assets/images/rap_messypipeline.png)</a>
 *Image above from the [RAP Companion](https://ukgovdatascience.github.io/rap_companion/)*
 
-Manual steps such as these are time consuming and can introduce errors.  What if you had updated the discount rate in the report but forgot to do so in the spreadsheet?  Would this get caught when the work was checked?
+Manual steps such as these are time consuming and can introduce errors.
+
+Critically, a mismatch can emerge between the report and the underlying analysis.  For example, you might update the discount rate in the report but forget to do so in the spreadsheet.  Would this get caught when the work was checked?
 
 **Working reproducibly minimises the risk of these errors and allows changes to be made efficiently.**
 
@@ -29,7 +31,7 @@ In order to make the required changes:
 
 ## Check your changes
 
-Before creating the report, run your tests in the console
+Before creating the report, run your tests in the console to check that they still pass.
 
 ```R
 > test.project()
@@ -43,7 +45,6 @@ Autoloading packages
  Loading package: stringr
  Loading package: lubridate
  Loading package: forecast
- Loading package: ggplot2
 Autoloading helper functions
  Running helper script: globals.R
  Running helper script: helpers.R
@@ -51,30 +52,32 @@ Autoloading data
 Munging data
  Running preprocessing script: 01-A.R
 √ | OK F W S | Context
-| |  3       | 0Error in x[[method]](...) : attempt to apply non-function
+x |  3 1     | Basic checks
+--------------------------------------------------------------------------------
+test.R:6: failure: Correct business lines are included
+ncol(cashflows_to_use) not equal to 6.
+1/1 mismatches
+[1] 4 - 6 == -2
+--------------------------------------------------------------------------------
 
 == Results =====================================================================
 OK:       3
-Failed:   5
+Failed:   1
 Warnings: 0
 Skipped:  0
 ```
 
-There are 5 failed tests.  To review the test results run the following
+You can see that three tests have passed but one has failed.
 
-```R
-> (test_dir("tests", reporter = "list"))
+Reviewing the output from `testthat` reveals that:
 
-    file context                                test nb failed skipped error warning user system real
-1 test.R                  discount() works correctly  3      0   FALSE FALSE       0    0      0    0
-2 test.R         Correct business lines are included  1      1   FALSE FALSE       0    0      0    0
-```
+* The "Correct business lines are included" test on line 6 of `test.R` has failed.
+* This test checks that `ncol(cashflows_to_use)` equals 6.
+* The actual value of the test was 4 which is 2 less than the expected value.
 
-You can see that the "Correct business lines are included" test has failed.  
+Recall that this test checks that there are six sets of cashflows in the analysis.  Now that two business lines have been removed, the test should instead check that there are four sets of cashflows.
 
-Recall that this test checks that there are six sets of cashflows in the analysis.  Now that two business lines have been removed, the test should check that there are four sets of cashflows.
-
-To correct this, go to `test.R` and change line 10 to `expect_equal(ncol(cashflows_to_use), 4)`.  All tests should now pass and you can finalise the report.
+To correct this, go to `test.R` and change line 6 to `expect_equal(ncol(cashflows_to_use), 4)`.  All tests should now pass and you can finalise the report.
 
 ## Finalise the report
 
