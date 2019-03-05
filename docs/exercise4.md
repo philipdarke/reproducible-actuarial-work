@@ -62,8 +62,6 @@ Running `> cf_plot` will display a graph of the cashflows in the plots plane.
 
 You can use these resources to improve the plot, for example by formatting the axis and legend.
 
-<div class="nav">
-  <div class="back"><a href="./exercise3"><< Exercise 3</a></div>
-  <div class="contents"><a href="./index.html#contents">Contents</a></div>
-  <div class="forward"><a href="./exercise5">Exercise 5 >></a></div>
-</div>
+{% include nav.html left-url="./exercise3" left-text="Exercise 3"
+centre-url="./index.html#contents" centre-text="Contents"
+right-url="./exercise5" right-text="Exercise 5" %}

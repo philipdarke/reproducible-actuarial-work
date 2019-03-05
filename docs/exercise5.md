@@ -91,8 +91,6 @@ Review `report.Rmd` to see how results from the analysis have been included in t
 
 You can also create templates to customise how the document looks, for example to match your organisation's report style.  See [advanced customisation](https://bookdown.org/yihui/rmarkdown/pdf-document.html#advanced-customization-1) for some pointers.
 
-<div class="nav">
-  <div class="back"><a href="./exercise4"><< Exercise 4</a></div>
-  <div class="contents"><a href="./index.html#contents">Contents</a></div>
-  <div class="forward"><a href="./exercise6">Exercise 6 >></a></div>
-</div>
+{% include nav.html left-url="./exercise4" left-text="Exercise 4"
+centre-url="./index.html#contents" centre-text="Contents"
+right-url="./exercise6" right-text="Exercise 6" %}

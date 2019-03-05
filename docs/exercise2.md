@@ -75,8 +75,6 @@ When you have multiple pre-processing scripts in your `munge` directory, Project
 02-B.r
 ```
 
-<div class="nav">
-  <div class="back"><a href="./exercise1"><< Exercise 1</a></div>
-  <div class="contents"><a href="./index.html#contents">Contents</a></div>
-  <div class="forward"><a href="./exercise3">Exercise 3 >></a></div>
-</div>
+{% include nav.html left-url="./exercise1" left-text="Exercise 1"
+centre-url="./index.html#contents" centre-text="Contents"
+right-url="./exercise3" right-text="Exercise 3" %}

@@ -31,8 +31,4 @@ Good luck!
 **Philip Darke** is an actuary with over 10 years’ consulting experience at Mercer. Philip believes data science will play a significant role in the future of the actuarial profession, and is currently studying at the EPSRC Centre for Doctoral Training in Cloud Computing for Big Data at Newcastle University.  
 [philipdarke.com](https://philipdarke.com/)
 
-<div class="nav">
-  <div class="back"><a href="./exercise7"><< Exercise 7</a></div>
-  <div class="contents"></div>
-  <div class="forward"></div>
-</div>
+{% include nav.html left-url="./exercise7" left-text="Exercise 7" %}

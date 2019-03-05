@@ -85,8 +85,6 @@ Open `reports/report.Rmd` (in practice you would likely also need to update the 
 
 **Note how the figures, plot and tables have all updated to reflect the new analysis.**
 
-<div class="nav">
-  <div class="back"><a href="./exercise6"><< Exercise 6</a></div>
-  <div class="contents"><a href="./index.html#contents">Contents</a></div>
-  <div class="forward"><a href="./nextsteps">Next steps >></a></div>
-</div>
+{% include nav.html left-url="./exercise6" left-text="Exercise 6"
+centre-url="./index.html#contents" centre-text="Contents"
+right-url="./nextsteps" right-text="Next steps" %}

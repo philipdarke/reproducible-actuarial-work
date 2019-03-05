@@ -58,8 +58,6 @@ discount = function(cashflows, disc, freq) {
 }
 ```
 
-<div class="nav">
-  <div class="back"><a href="./exercise2"><< Exercise 2</a></div>
-  <div class="contents"><a href="./index.html#contents">Contents</a></div>
-  <div class="forward"><a href="./exercise4">Exercise 4 >></a></div>
-</div>
+{% include nav.html left-url="./exercise2" left-text="Exercise 2"
+centre-url="./index.html#contents" centre-text="Contents"
+right-url="./exercise4" right-text="Exercise 4" %}
