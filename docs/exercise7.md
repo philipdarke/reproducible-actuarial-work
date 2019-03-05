@@ -81,9 +81,9 @@ To correct this, go to `test.R` and change line 6 to `expect_equal(ncol(cashflow
 
 ## Finalise the report
 
-Open `reports/report.Rmd` (in practice you would likely need to also update the wording) and click `Knit`.  A new [report](assets/report2.pdf) will be created with the updated results.
+Open `reports/report.Rmd` (in practice you would likely also need to update the wording) and click `Knit`.  A new [report](assets/report2.pdf) will be created with the updated results.
 
-Note how the figures, plot and tables have all updated to reflect the new analysis.
+**Note how the figures, plot and tables have all updated to reflect the new analysis.**
 
 <div class="nav">
   <div class="back"><a href="./exercise6"><< Exercise 6</a></div>
