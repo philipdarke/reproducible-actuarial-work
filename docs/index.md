@@ -64,8 +64,4 @@ If you are new to R or RStudio you can find online learning resources [here](htt
   <li><a href="nextsteps">Next steps</a></li>
 </ul>
 
-<div class="nav">
-  <div class="back"></div>
-  <div class="contents"></div>
-  <div class="forward"><a href="./exercise1">Exercise 1 >></a></div>
-</div>
+{% include nav.html right-url="./exercise1" right-text="Exercise 1" %}

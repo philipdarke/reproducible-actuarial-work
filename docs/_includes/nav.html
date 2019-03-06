@@ -1,0 +1,17 @@
+<div class="nav">
+  <div class="back">
+    {% if include.left-text %}
+      <a href="{{ include.left-url}}"><< {{ include.left-text}}</a>
+    {% endif %}
+  </div>
+  <div class="up">
+    {% if include.centre-text %}
+      <a href="{{ include.centre-url}}">{{ include.centre-text}}</a>
+    {% endif %}
+  </div>
+  <div class="forward">
+    {% if include.right-text %}
+      <a href="{{ include.right-url}}">{{ include.right-text}} >></a>
+    {% endif %}
+  </div>
+</div>

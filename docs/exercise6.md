@@ -95,8 +95,6 @@ The process of running tests can be automated using continuous integration tools
 
 You can also use code coverage tools such as [Codecov](https://codecov.io/) to monitor how much of your code is subject to automatic testing.  These tools can highlight when parts of your code are not being checked, prompting you to write more unit tests.
 
-<div class="nav">
-  <div class="back"><a href="./exercise5"><< Exercise 5</a></div>
-  <div class="contents"><a href="./index.html#contents">Contents</a></div>
-  <div class="forward"><a href="./exercise7">Exercise 7 >></a></div>
-</div>
+{% include nav.html left-url="./exercise5" left-text="Exercise 5"
+centre-url="./index.html#contents" centre-text="Contents"
+right-url="./exercise7" right-text="Exercise 7" %}
