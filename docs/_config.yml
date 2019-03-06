@@ -1,3 +1,6 @@
 title: Reproducible data science techniques in actuarial work
 description: What can actuaries learn from open science and other professions?
 theme: jekyll-theme-cayman
+
+# Google Analytics
+google_analytics: UA-135736401-1
