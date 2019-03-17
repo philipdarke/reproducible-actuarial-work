@@ -64,4 +64,6 @@ If you are new to R or RStudio you can find online learning resources [here](htt
   <li><a href="nextsteps">Next steps</a></li>
 </ul>
 
+You can download the final project structure from the accompanying <a href="{{ site.github.repository_url }}">GitHub repository</a>.
+
 {% include nav.html right-url="./exercise1" right-text="Exercise 1" %}
