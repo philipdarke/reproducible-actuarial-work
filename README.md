@@ -4,4 +4,6 @@ This repository accompanies the work presented at the Data Science: Opportunitie
 
 **See the project website at https://philipdarke.com/reproducible-actuarial-work.**
 
+The final ProjectTemplate structure after completing exercise 7 is [here](https://github.com/philipdarke/reproducible-actuarial-work/tree/master/cashflow_analysis).
+
 Made available under the [MIT license](https://github.com/philipdarke/reproducible-actuarial-work/blob/master/LICENSE).
