@@ -12,9 +12,9 @@ In addition to using libraries, it is often helpful to write helper functions to
 
 We will use the `forecast` library in our analysis.
 
-To add this library to the project, go to `config/config.dcf`, set `load_libraries` to TRUE (so that the libraries are loaded when a project is opened) and add it to the list of libraries.
+To add this library to the project, go to `config/global.dcf`, set `load_libraries` to TRUE (so that the libraries are loaded when a project is opened) and add it to the list of libraries.
 
-Following this, `config.dcf` should look like this
+Following this, `global.dcf` should look like this
 
 ```R
 version: 0.8.2
